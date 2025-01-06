@@ -1,0 +1,11 @@
+.title--h1 h1 {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 800;
+    line-height: 44px;
+    text-transform: none;
+    margin: 5rem 0 0;
+}
