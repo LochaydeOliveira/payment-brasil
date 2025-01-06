@@ -9,3 +9,14 @@
     text-transform: none;
     margin: 5rem 0 0;
 }
+
+@media (max-width: 767px) {
+    .style-gratis {
+        margin: 5.4rem 0 3rem!important;
+    }
+
+    .style-gratis-ind {
+        margin: -1.4rem 0 6rem!important;
+    }
+   
+}
