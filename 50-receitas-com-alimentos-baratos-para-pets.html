@@ -45,6 +45,31 @@
 		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1141580850876642&ev=PageView&noscript=1"/>
 	</noscript>
 
+<style>
+	@keyframes fadeInLeft {
+	from {
+	opacity: 0;
+	transform: translateX(-50px);
+	}
+	to {
+	opacity: 1;
+	transform: translateX(0);
+	}
+	}
+
+	.img-fluid {
+	opacity: 0; /* Inicialmente invisível */
+	transform: translateX(-50px); /* Posição inicial fora da tela */
+	transition: opacity 1s ease-out, transform 1s ease-out;
+	}
+
+	/* Quando a classe 'show' for adicionada, a imagem aparecerá com efeito */
+	.img-fluid.show {
+	opacity: 1;
+	transform: translateX(0);
+	}
+</style>
+
 </head>
 
 
@@ -89,7 +114,99 @@
 	</section>
 
 	<section class="section-list-beneficios">
+		<div class="container">
+			<div class="row align-items-center">
 
+				<div class="col-md-6 text-center">
+					<img src="img/imgs 50 receitas/cachorro.avif" class="img-fluid rounded" alt="Imagem de cachorros bonitos">
+				</div>
+				
+
+				<div class="col-md-6">
+					<h2 class="mb-4 title-bene"><strong>ACABE COM OS MAIORES PESADELOS DOS TUTORES:</strong>  descubra como livrar seu pet de problemas como...</h2>
+					
+					<div class="list-bener-one">
+						<h3>Problemas de pele</h3>
+						<ul class="ul-list-bene">
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Dermatite
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Sarna
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Alergias
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Quedas de pelo
+							</li>
+						</ul>
+					</div>
+
+					<div class="list-bener-one">
+						<h3>Digestivos</h3>
+						<ul class="ul-list-bene">
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Vômitos
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Gastrites
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Pedras nos Rins
+							</li>
+						</ul>
+					</div>
+
+					<div class="list-bener-one">
+						<h3>Graves</h3>
+						<ul class="ul-list-bene">
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Cinomose
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Câncer
+							</li>
+							<li class="list-bene-item">
+								<svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="20" height="20">
+									<path d="M13.93,12L21.666,2.443c.521-.644,.422-1.588-.223-2.109-.645-.522-1.588-.421-2.109,.223l-7.334,9.06L4.666,.557c-1.241-1.519-3.56,.357-2.332,1.887l7.736,9.557L2.334,21.557c-.521,.644-.422,1.588,.223,2.109,.64,.519,1.586,.424,2.109-.223l7.334-9.06,7.334,9.06c.524,.647,1.47,.742,2.109,.223,.645-.521,.744-1.466,.223-2.109l-7.736-9.557Z"/>
+								</svg>
+								Diabetes
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<span class="text-rodape-section"><strong style="margin: 0 5px 0 0;">80% dos casos</strong>   vêm dos produtos químicos da ração e 20% de algum alimento natural.</span>
+		</div>
 	</section>
 	
 
@@ -115,6 +232,24 @@
 		video.play();
 	}
 </script>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const img = document.querySelector(".img-fluid");
+	
+		function checkScroll() {
+			const rect = img.getBoundingClientRect();
+			if (rect.top < window.innerHeight * 0.8) {
+				img.classList.add("show");
+				window.removeEventListener("scroll", checkScroll);
+			}
+		}
+	
+		window.addEventListener("scroll", checkScroll);
+		checkScroll(); // Verifica ao carregar a página
+	});
+</script>
+	
 
 </body>
 

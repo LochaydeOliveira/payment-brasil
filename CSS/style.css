@@ -300,14 +300,52 @@ video {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5rem 10rem;
 }
 
+.title-bene {
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 35px;
+    font-weight: 400;
+}
 
+.title-bene strong {
+    font-weight: 800;
+}
+
+.list-bener-one {
+    margin: 3rem 0;
+    color: #ffbf00;
+}
+
+.ul-list-bene {
+    list-style: none!important;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.list-bene-item svg {
+    fill: #FFBF00;
+}
 
 /* Adiciona a animação quando o mouse passa por cima */
 .section-button-ancora button:hover {
     animation: shake 0.5s ease-in-out;
 }
+
+.text-rodape-section {
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Para telas muito pequenas (até 480px) */
 @media (max-width: 480px) {
@@ -363,6 +401,18 @@ video {
         color: #1e1e1e;
         font-weight: 300;
         font-style: italic;
+    }
+
+    .section-list-beneficios {
+        height: 150vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 800;
     }
 
   }
@@ -422,6 +472,17 @@ video {
         font-weight: 300;
         font-style: italic;
     }
+
+    .section-list-beneficios {
+        height: 150vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 70%;
+        padding: 20px;
+        font-weight: 800;
+    }
   }
   
   /* Para tablets (largura entre 769px e 1024px) */
@@ -478,5 +539,16 @@ video {
         color: #1e1e1e;
         font-weight: 300;
         font-style: italic;
+    }
+
+    .section-list-beneficios {
+        height: 150vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 70%;
+        padding: 20px;
+        font-weight: 800;
     }
   }
