@@ -351,30 +351,26 @@ video {
 @media (max-width: 480px) {
     h1 {
         font-weight: 400!important;
-        font-size: 1.8rem!important;
+        font-size: 1.5rem!important;
         max-width: 700px;
         margin: 0 auto;
-        color: hsl(0, 0%, 100%)!important;
-        line-height: 2.3rem!important;
+        color: #000!important;
+        line-height: 1.6rem!important;
         opacity: 0;
-        transform: translateY(-30px); /* Começa 30px acima */
+        transform: translateY(-30px);
         animation: fadeInDown 0.9s ease-out forwards;
       }
-      .main-title {
-        width: 100%;
-        padding: 2rem 1.5rem 6rem 1.5rem;
-        background: #131313;
-        text-align: center;
-        position: relative;
-    
-      }
+    .main-title {
+    background: #FFBF00;
+    }
     .underline {
-        width: 300px;
+        width: 270px;
+        bottom: 1.4rem;
     }
 
     .section-one-container {
         height: auto;
-        padding: 2em 0;
+        padding: 0;
     }
 
     .notice-post {
@@ -404,7 +400,7 @@ video {
     }
 
     .section-list-beneficios {
-        height: 150vh;
+        height: 180vh;
         padding: 1rem;
     }
 
@@ -413,6 +409,31 @@ video {
         padding: 15px;
         font-size: 18px;
         font-weight: 800;
+        line-height: 20px;
+    }
+
+    .text-rodape-section {
+        font-size: 25px;
+        line-height: 27px;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    video {
+        border-radius: 0;
+    }
+
+    .main-title {
+        padding: 2rem 1rem;
+        background: #FFBF00;
+    }
+
+    .title-bene {
+        padding: 2rem 0;
     }
 
   }
@@ -424,23 +445,19 @@ video {
         font-size: 2.6rem!important;
         max-width: 600px;
         margin: 0 auto;
-        color: hsl(0, 0%, 100%)!important;
+        color: #000!important;
         line-height: 2.7rem!important;
         opacity: 0;
         transform: translateY(-30px); /* Começa 30px acima */
         animation: fadeInDown 0.9s ease-out forwards;
       }
       .main-title {
-        width: 100%;
-        padding: 3rem 1.5rem;
-        background: #131313;
-        text-align: center;
-        position: relative;
+        background: #FFBF00;
     
       }
     .underline {
         width: 400px;
-        bottom: 2rem;
+        bottom: 5rem;
     }
     .section-one-container {
         height: auto;
@@ -482,33 +499,26 @@ video {
         width: 70%;
         padding: 20px;
         font-weight: 800;
+    }
+
+    .text-rodape-section {
+        font-size: 20px;
+        width: 75%;
+        flex-direction: column;
     }
   }
   
   /* Para tablets (largura entre 769px e 1024px) */
   @media (min-width: 769px) and (max-width: 1024px) {
     h1 {
-        font-weight: 400!important;
-        font-size: 2.6rem!important;
-        max-width: 700px;
-        margin: 0 auto;
-        color: hsl(0, 0%, 100%)!important;
-        line-height: 2.7rem!important;
-        opacity: 0;
-        transform: translateY(-30px); /* Começa 30px acima */
-        animation: fadeInDown 0.9s ease-out forwards;
+        color: #000!important;
       }
       .main-title {
-        width: 100%;
-        padding: 3rem 1.5rem;
-        background: #131313;
-        text-align: center;
-        position: relative;
-    
+        background: #FFBF00;
       }
     .underline {
         width: 400px;
-        bottom: 2rem;
+        bottom: 5rem;
     }
     .section-one-container {
         height: auto;
@@ -550,5 +560,9 @@ video {
         width: 70%;
         padding: 20px;
         font-weight: 800;
+    }
+
+    .text-rodape-section {
+        font-size: 20px;
     }
   }
