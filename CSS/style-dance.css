@@ -1,0 +1,188 @@
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+ .section-one-dance h2 {
+    width: 100%;
+    max-width: 35%;
+    margin: 2rem auto 0.8rem;;
+    font-weight: 700;
+}
+
+.section-one-dance p {
+    font-size: 12px;
+    font-weight: 400;
+}
+  .video-container {
+    position: relative;
+    display: flex;
+    width: 40%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+}
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 2rem;
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.first-cta {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.first-cta button {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right, #204309, #3d850e, #08f304);
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.shakeme {
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-name:shakeMe;
+    animation-timing-function:linear;
+    backface-visibility:hidden;
+    transform:translateZ(0)
+  }
+
+  @keyframes shakeMe{18%,2%{transform:translate3d(-5px,0,0)}16%,4%{transform:translate3d(5px,0,0)}10%,14%,6%{transform:translate3d(-5px,0,0)}12%,8%{transform:translate3d(5px,0,0)}18.1%{transform:translateZ(0)}}
+  
