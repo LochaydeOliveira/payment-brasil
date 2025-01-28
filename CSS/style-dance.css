@@ -162,7 +162,7 @@ video {
 }
 
 .first-cta {
-    margin: 0 auto;
+    margin: 15px auto;
     align-items: center;
 }
 
@@ -201,4 +201,210 @@ video {
         0px 12.522px 10.017px 0px rgba(219, 15, 219, 0.16),
         0px 6.65px 5.32px 0px rgba(219, 15, 219, 0.13),
         0px 2.767px 2.214px 0px rgba(219, 15, 219, 0.09);
+}
+
+.section-depoim {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7rem 1rem;
+  background: #0C041C;
+
+}
+.section-depoim h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  width: 50%;
+  text-align: center;
+}
+
+.section-bene H2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+  margin: 5rem 0;
+}
+.videos-depoim {
+  padding: 2rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.videos-depoim-item {
+  padding: 2rem
+}
+
+.videos-depoim-item video {
+  border-radius: 10px;
+}
+
+.section-depoim button {
+  max-width: 40rem;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to right, #204309, #3d850e, #08f304);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 28px;
+  transition: all 300ms;
+}
+
+.section-depoim button:hover {
+  background: linear-gradient(to right, #08f304, #3d850e, #204309);
+  transform: scale(1.1);
+  animation: none;
+}
+
+.section-publico-alvo {
+  padding: 5rem;
+}
+
+.section-publico-alvo h3 {
+  margin: 2rem;
+  font-size: 38px;
+  font-weight: 700;
+
+}
+
+.section-publico-alvo h3 span {
+  background: linear-gradient(to right, #4F01CA, #DB0FDB);
+  background-clip: text;
+  color: #ffffff0a;
+}
+
+
+.section-garantia {
+  background: #0C041C;
+  padding: 8rem 0;
+  color: #fff;
+}
+.section-garantia h3 {
+  font-size: 45px;
+  padding: 0;
+}
+
+.section-garantia p {
+  font-size: 20px;
+  font-weight: 200;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.section-garantia p b {
+  font-weight: 600;
+
+}
+
+.section-garantia img {
+  width: 100%;
+  max-width: 500px!important;
+}
+
+.guarantee-7-dias {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.section-valor {
+  background: #0C041C;
+  padding: 8rem 0;
+  color: #fff;
+}
+
+.section-valor h3 {
+  background: linear-gradient(to right, #4F01CA, #DB0FDB 75%);
+  background-clip: text;
+  color: #ffffff0a;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+
+.img-oferta {
+  width: 100%;
+  max-width: 400px!important;
+  margin: 0 auto 2rem!important;
+}
+
+.tag-discount {
+  margin: 0 auto 7px;
+  background: #DB0FDB;
+  max-width: max-content;
+  padding: 2px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.price-ant {
+  margin: 20px 0 5px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.price-ant span {
+  margin: 20px 0 5px;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-color: #db0fdb;
+}
+
+.price-card button {
+  max-width: 25rem;
+  height: 5rem;
+  width: 100%;
+  background: linear-gradient(to right, #204309, #3d850e, #08f304);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 28px;
+  transition: all 300ms;
+  animation: pulse 1.2s infinite ease-in-out;
+}
+
+.price-card h4 {
+  margin: 4rem 0 10px;
+  font-size: 20px;
+}
+
+.img-garantia-final{
+  width: 100%;
+  max-width: 20rem!important;
+}
+
+.countdown-container {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  padding: 5px 5rem;
+  background-color: #ff4747;
+  color: white;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-timer {
+  font-size: 40px;
+  margin-top: 5px;
+  font-weight: bold;
 }

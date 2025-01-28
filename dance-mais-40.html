@@ -31,12 +31,10 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
-            padding: 40px 0;
+            padding: 6rem 0;
             color: #fff;
          }
          .section-bene {
-            height: 50vh;
             background-color: #0C041C;
             width: 100%;
             padding: 5rem;
@@ -65,7 +63,16 @@
 
          .testimonials video { width: 100%; height: auto; }
          .guarantee-icon, .price-card img { max-width: 100px; display: block; margin: 0 auto; }
-         .price-card { text-align: center; padding: 20px; border: 2px solid #ddd; border-radius: 10px; }
+         .price-card {
+            text-align: center;
+            padding: 5rem 0;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #5546729c;
+            background: #1e1334;
+         }
 
      </style>
 
@@ -121,14 +128,16 @@
 
             </div>
             <div class="first-cta d-flex flex-column w-25">
-               <button class="btn btn-success mt-3 shakeme">Quero dançar agora</button>
+               
+               <button type="button" class="btn btn-success mt-3 shakeme" onclick="window.location.href='#sectionPrice'">Quero dançar agora</button>
                <img src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Selos de Garantia" class="mt-3" width="300">
             </div>
 
       </div>
        
        <!-- Seção 3: Benefícios -->
-       <div class="section-bene d-flex justify-content-center">
+       <div class="section-bene d-flex justify-content-center flex-column align-items-center">
+         <h2>TUDO ISSO PARA MELHORAR SUA VIDA:</h2>
            <div class="row justify-content-center gap-3 container">
                <div class="benefit-card">                  
                   <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><rect width="43" height="43" rx="5" fill="#DB0FDB"></rect><path d="M12.214 11.4281C11.1467 11.4281 10.276 12.298 10.276 13.3654V25.5521C10.276 26.6195 11.1467 27.4932 12.214 27.4932H31.2965C32.3638 27.4932 33.2338 26.6195 33.2338 25.5521V13.3654C33.2338 12.298 32.3638 11.4281 31.2965 11.4281H12.214ZM12.214 12.1935H31.2965C31.9531 12.1935 32.4684 12.7088 32.4684 13.3654V25.5521C32.4684 26.2087 31.9531 26.727 31.2965 26.727H12.214C11.5574 26.727 11.0421 26.2087 11.0421 25.5521V13.3654C11.0421 12.7088 11.5574 12.1935 12.214 12.1935ZM21.7564 14.2219C18.8681 14.2219 16.5162 16.5708 16.5162 19.4591C16.5162 22.3474 18.8681 24.6993 21.7564 24.6993C24.6447 24.6993 26.9943 22.3474 26.9943 19.4591C26.9943 16.5708 24.6447 14.2219 21.7564 14.2219ZM21.7564 14.9873C24.231 14.9873 26.2282 16.9845 26.2282 19.4591C26.2282 21.9338 24.231 23.9339 21.7564 23.9339C19.2817 23.9339 17.2823 21.9338 17.2823 19.4591C17.2823 16.9845 19.2817 14.9873 21.7564 14.9873ZM20.0702 16.6795C20.0192 16.6785 19.9685 16.6877 19.9211 16.7066C19.8737 16.7254 19.8306 16.7536 19.7942 16.7894C19.7579 16.8252 19.729 16.8679 19.7094 16.915C19.6898 16.9621 19.6798 17.0126 19.68 17.0636V21.8576C19.6798 21.928 19.6989 21.9971 19.7354 22.0573C19.7719 22.1175 19.8242 22.1665 19.8867 22.1988C19.9492 22.2312 20.0195 22.2457 20.0897 22.2408C20.1599 22.2358 20.2274 22.2116 20.2847 22.1707L23.669 19.7723C23.7188 19.7369 23.7595 19.6901 23.7875 19.6358C23.8155 19.5816 23.8302 19.5214 23.8302 19.4603C23.8302 19.3992 23.8155 19.339 23.7875 19.2847C23.7595 19.2304 23.7188 19.1836 23.669 19.1482L20.2847 16.7497C20.2219 16.7053 20.1471 16.6808 20.0702 16.6795ZM20.4461 17.8036L22.7848 19.4621L20.4461 21.1169V17.8036ZM21.6607 28.7159C20.7037 28.7159 19.8982 29.3971 19.7069 30.299L10.5981 30.3289C10.5477 30.3289 10.4977 30.3388 10.4511 30.3581C10.4045 30.3775 10.3622 30.4058 10.3266 30.4416C10.291 30.4773 10.2628 30.5197 10.2436 30.5663C10.2244 30.613 10.2147 30.663 10.2148 30.7135C10.215 30.7639 10.2252 30.8138 10.2447 30.8603C10.2643 30.9068 10.2928 30.949 10.3287 30.9845C10.3646 31.0199 10.4071 31.048 10.4539 31.0669C10.5006 31.0859 10.5507 31.0954 10.6011 31.095L19.6965 31.0644C19.8651 31.9951 20.6835 32.7079 21.6607 32.7079C22.6254 32.7079 23.4337 32.0134 23.6159 31.1003L32.7203 31.0945C32.7707 31.0947 32.8207 31.0849 32.8674 31.0658C32.9141 31.0466 32.9565 31.0184 32.9922 30.9828C33.028 30.9472 33.0564 30.905 33.0757 30.8584C33.0951 30.8118 33.105 30.7618 33.105 30.7114C33.105 30.6609 33.0951 30.611 33.0757 30.5644C33.0564 30.5178 33.028 30.4755 32.9922 30.4399C32.9565 30.4043 32.9141 30.3761 32.8674 30.357C32.8207 30.3378 32.7707 30.3281 32.7203 30.3283L23.6182 30.3341C23.4414 29.4146 22.6303 28.7159 21.6607 28.7159ZM21.6607 29.3938C22.3924 29.3938 22.9769 29.9791 22.9769 30.7108C22.9769 31.4425 22.3924 32.03 21.6607 32.03C20.929 32.03 20.3415 31.4425 20.3415 30.7108C20.3415 29.9791 20.929 29.3938 21.6607 29.3938Z" fill="white"></path></svg> 
@@ -153,46 +162,99 @@
            </div>
        </div>
        
-       <!-- Seção 4: Depoimentos -->
-       <div class="container text-center section">
-           <div class="row testimonials">
-               <div class="col-md-3"><video src="test1.mp4" controls></video></div>
-               <div class="col-md-3"><video src="test2.mp4" controls></video></div>
-               <div class="col-md-3"><video src="test3.mp4" controls></video></div>
-               <div class="col-md-3"><video src="test4.mp4" controls></video></div>
-           </div>
-           <button class="btn btn-success mt-3">Quero dançar agora</button>
-       </div>
-       
+      <!-- Seção 4: Depoimentos -->
+      <div class="text-center section-depoim">
+         <h2>VEJA O QUE ALGUMAS DAS ALUNAS ESTÃO FALANDO SOBRE NOSSAS AULAS:</h2>
+         <div class="container videos-depoim">
+            <div class="row justify-content-center">
+               <div class="col-md-6 col-lg-6 mb-3 videos-depoim-item ">
+                     <video controls poster="img/imgs 50 receitas/2.png">
+                        <source src="img/imgs dance 40/depoimentos/Depoimento - Cristiane.mp4" type="video/mp4">
+                     </video>
+               </div>
+               <div class="col-md-6 col-lg-6 mb-3 videos-depoim-item ">
+                     <video controls poster="img/imgs 50 receitas/1.png">
+                        <source src="img/imgs dance 40/depoimentos/Depoimento - Eliene.mp4" type="video/mp4">
+                     </video>
+               </div>
+               <div class="col-md-6 col-lg-6 mb-3 videos-depoim-item ">
+                     <video controls poster="img/imgs 50 receitas/3.png">
+                        <source src="img/imgs dance 40/depoimentos/Depoimento - Elimalba.mp4" type="video/mp4">
+                     </video>
+               </div>
+               <div class="col-md-6 col-lg-6 mb-3 videos-depoim-item ">
+                     <video controls poster="img/imgs 50 receitas/4.png">
+                        <source src="img/imgs dance 40/depoimentos/Depoimento - Meire.mp4" type="video/mp4">
+                     </video>
+               </div>
+            </div>
+         </div>
+         <button class="btn btn-success mt-3 shakeme">Quero dançar agora</button>
+      </div>
+
        <!-- Seção 5: Público-alvo -->
-       <div class="container text-center section">
-           <h3>PARA QUEM É AS AULAS DO DANCE +40?</h3>
-           <div class="row">
-               <div class="col-md-4">💃 Mulheres acima de 40 anos</div>
-               <div class="col-md-4">🎶 Mulheres que não gostam de músicas feias</div>
-               <div class="col-md-4">🩰 Mulheres que tiveram dificuldades ao dançar</div>
+       <div class="section-publico-alvo">
+         <div class="container text-center">
+            <h3>PARA QUEM É AS AULAS DO <span>DANCE +40?</span></h3>
+            <div class="row justify-content-center gap-3 container">
+               <div class="benefit-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M42.5938 21.5C42.5938 23.3 40.3824 24.7836 39.9395 26.443C39.4824 28.1586 40.6391 30.5492 39.7707 32.0504C38.8883 33.5762 36.234 33.759 34.9965 34.9965C33.759 36.234 33.5762 38.8883 32.0504 39.7707C30.5492 40.6391 28.1586 39.4824 26.443 39.9395C24.7836 40.3824 23.3 42.5938 21.5 42.5938C19.7 42.5938 18.2164 40.3824 16.557 39.9395C14.8414 39.4824 12.4508 40.6391 10.9496 39.7707C9.42383 38.8883 9.24102 36.234 8.00352 34.9965C6.76602 33.759 4.11172 33.5762 3.2293 32.0504C2.36094 30.5492 3.51758 28.1586 3.06055 26.443C2.61758 24.7836 0.40625 23.3 0.40625 21.5C0.40625 19.7 2.61758 18.2164 3.06055 16.557C3.51758 14.8414 2.36094 12.4508 3.2293 10.9496C4.11172 9.42383 6.76602 9.24102 8.00352 8.00352C9.24102 6.76602 9.42383 4.11172 10.9496 3.2293C12.4508 2.36094 14.8414 3.51758 16.557 3.06055C18.2164 2.61758 19.7 0.40625 21.5 0.40625C23.3 0.40625 24.7836 2.61758 26.443 3.06055C28.1586 3.51758 30.5492 2.36094 32.0504 3.2293C33.5762 4.11172 33.759 6.76602 34.9965 8.00352C36.234 9.24102 38.8883 9.42383 39.7707 10.9496C40.6391 12.4508 39.4824 14.8414 39.9395 16.557C40.3824 18.2164 42.5938 19.7 42.5938 21.5Z" fill="#DB0FDB"></path><path d="M27.5961 15.214L19.5664 23.2437L15.4039 19.0847C14.5004 18.1812 13.0344 18.1812 12.1309 19.0847C11.2274 19.9882 11.2274 21.4542 12.1309 22.3578L17.9703 28.1972C18.8492 29.0761 20.2766 29.0761 21.1555 28.1972L30.8656 18.4871C31.7692 17.5835 31.7692 16.1175 30.8656 15.214C29.9621 14.3105 28.4996 14.3105 27.5961 15.214Z" fill="#FFFCEE"></path></svg>               
+                  <p>Mulheres acima de 40 anos</p>
+               </div>               
+               <div class="benefit-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M42.5938 21.5C42.5938 23.3 40.3824 24.7836 39.9395 26.443C39.4824 28.1586 40.6391 30.5492 39.7707 32.0504C38.8883 33.5762 36.234 33.759 34.9965 34.9965C33.759 36.234 33.5762 38.8883 32.0504 39.7707C30.5492 40.6391 28.1586 39.4824 26.443 39.9395C24.7836 40.3824 23.3 42.5938 21.5 42.5938C19.7 42.5938 18.2164 40.3824 16.557 39.9395C14.8414 39.4824 12.4508 40.6391 10.9496 39.7707C9.42383 38.8883 9.24102 36.234 8.00352 34.9965C6.76602 33.759 4.11172 33.5762 3.2293 32.0504C2.36094 30.5492 3.51758 28.1586 3.06055 26.443C2.61758 24.7836 0.40625 23.3 0.40625 21.5C0.40625 19.7 2.61758 18.2164 3.06055 16.557C3.51758 14.8414 2.36094 12.4508 3.2293 10.9496C4.11172 9.42383 6.76602 9.24102 8.00352 8.00352C9.24102 6.76602 9.42383 4.11172 10.9496 3.2293C12.4508 2.36094 14.8414 3.51758 16.557 3.06055C18.2164 2.61758 19.7 0.40625 21.5 0.40625C23.3 0.40625 24.7836 2.61758 26.443 3.06055C28.1586 3.51758 30.5492 2.36094 32.0504 3.2293C33.5762 4.11172 33.759 6.76602 34.9965 8.00352C36.234 9.24102 38.8883 9.42383 39.7707 10.9496C40.6391 12.4508 39.4824 14.8414 39.9395 16.557C40.3824 18.2164 42.5938 19.7 42.5938 21.5Z" fill="#DB0FDB"></path><path d="M27.5961 15.214L19.5664 23.2437L15.4039 19.0847C14.5004 18.1812 13.0344 18.1812 12.1309 19.0847C11.2274 19.9882 11.2274 21.4542 12.1309 22.3578L17.9703 28.1972C18.8492 29.0761 20.2766 29.0761 21.1555 28.1972L30.8656 18.4871C31.7692 17.5835 31.7692 16.1175 30.8656 15.214C29.9621 14.3105 28.4996 14.3105 27.5961 15.214Z" fill="#FFFCEE"></path></svg>
+                  <p>Mulheres que não gostam de músicas feias</p>
+               </div>
+               <div class="benefit-card">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none"><path d="M42.5938 21.5C42.5938 23.3 40.3824 24.7836 39.9395 26.443C39.4824 28.1586 40.6391 30.5492 39.7707 32.0504C38.8883 33.5762 36.234 33.759 34.9965 34.9965C33.759 36.234 33.5762 38.8883 32.0504 39.7707C30.5492 40.6391 28.1586 39.4824 26.443 39.9395C24.7836 40.3824 23.3 42.5938 21.5 42.5938C19.7 42.5938 18.2164 40.3824 16.557 39.9395C14.8414 39.4824 12.4508 40.6391 10.9496 39.7707C9.42383 38.8883 9.24102 36.234 8.00352 34.9965C6.76602 33.759 4.11172 33.5762 3.2293 32.0504C2.36094 30.5492 3.51758 28.1586 3.06055 26.443C2.61758 24.7836 0.40625 23.3 0.40625 21.5C0.40625 19.7 2.61758 18.2164 3.06055 16.557C3.51758 14.8414 2.36094 12.4508 3.2293 10.9496C4.11172 9.42383 6.76602 9.24102 8.00352 8.00352C9.24102 6.76602 9.42383 4.11172 10.9496 3.2293C12.4508 2.36094 14.8414 3.51758 16.557 3.06055C18.2164 2.61758 19.7 0.40625 21.5 0.40625C23.3 0.40625 24.7836 2.61758 26.443 3.06055C28.1586 3.51758 30.5492 2.36094 32.0504 3.2293C33.5762 4.11172 33.759 6.76602 34.9965 8.00352C36.234 9.24102 38.8883 9.42383 39.7707 10.9496C40.6391 12.4508 39.4824 14.8414 39.9395 16.557C40.3824 18.2164 42.5938 19.7 42.5938 21.5Z" fill="#DB0FDB"></path><path d="M27.5961 15.214L19.5664 23.2437L15.4039 19.0847C14.5004 18.1812 13.0344 18.1812 12.1309 19.0847C11.2274 19.9882 11.2274 21.4542 12.1309 22.3578L17.9703 28.1972C18.8492 29.0761 20.2766 29.0761 21.1555 28.1972L30.8656 18.4871C31.7692 17.5835 31.7692 16.1175 30.8656 15.214C29.9621 14.3105 28.4996 14.3105 27.5961 15.214Z" fill="#FFFCEE"></path></svg>
+                  <p>Mulheres que tiveram dificuldades ao dançar</p>
+               </div>
            </div>
+         </div>
        </div>
        
        <!-- Seção 6: Garantia -->
-       <div class="container text-center section">
-           <img src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" class="guarantee-icon" alt="Garantia">
+       <div class="section-garantia">
+         <div class="container text-center">
+            <img width="500" height="300" src="https://arturcandido.com.br/wp-content/uploads/2024/12/7-Dias-SVG.svg" class="guarantee-7-dias" alt="Garantia">
+           <img width="300" height="150" src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" class="guarantee-icon" alt="Garantia">
            <h3>Garantia de satisfação 100%</h3>
            <p>Experimente as aulas por 7 dias e, se não ficar satisfeita, entre em contato pelo email <b>arturcandisilva10@gmail.com</b> e reembolsaremos o valor investido.</p>
+         </div>
        </div>
        
        <!-- Seção 7: Card de Valor -->
-       <div class="container text-center section">
-           <div class="price-card">
-               <h3>APENAS R$ 99,00</h3>
-               <button class="btn btn-primary">Comprar agora</button>
-               <img src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Garantia" class="mt-3">
-           </div>
+       <div class="section-valor">
+         <div class="container text-center">
+           <div id="sectionPrice" class="price-card">
+            <img class="img-oferta" width="600" src="https://arturcandido.com.br/wp-content/uploads/2024/12/mockups-768x464.webp" alt="imagem da oferta">
+               <p class="tag-discount">85% OFF</p>
+               <p class="price-ant">DE <span>R$ 2.542,90</span></p>
+               <p style="margin: 0 0 -5px;">por apenas</p>
+               <h3><span style="font-size: 30px;">12x de</span> R$9,94</h3>
+               <p style="font-size: 20px;">ou R$99,00 à vista</p>
+               <button type="button" class="btn btn-primary" onclick="window.location.href='https://pay.kiwify.com.br/DzKlFnU?afid=19nBM2Bt'">Comprar agora</button>
+
+               <img width="300" height="auto" src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Garantia" class="mt-3 img-garantia-final">
+               
+               
+               <h4>Promoção encerra em:</h4>
+               <div class="countdown-container">                  
+                  <div class="countdown-timer" id="countdown">49:52</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
+                     <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
+                     <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
+                   </svg>
+              </div>
+         
+           
+            </div>
+         </div>
        </div>
        
        <!-- Seção 8: Rodapé -->
-       <div class="container text-center p-3 bg-light">
-           <p>&copy; 2024 Dance +40 - Todos os direitos reservados.</p>
+       <div class="p-3 bg-light">
+           <p class="container text-center">&copy; 2024 Dance +40 - Todos os direitos reservados.</p>
        </div>
        
        <script>
@@ -217,6 +279,28 @@
          });
 
        </script>
+
+<script>
+   function startCountdown(durationInSeconds) {
+       let timer = durationInSeconds;
+       const countdownElement = document.getElementById("countdown");
+
+       const interval = setInterval(function () {
+           const minutes = Math.floor(timer / 60);
+           const seconds = timer % 60;
+           countdownElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+           if (timer <= 0) {
+               clearInterval(interval);
+               countdownElement.textContent = "Promoção encerrada!";
+           } else {
+               timer--;
+           }
+       }, 1000);
+   }
+
+   startCountdown(49 * 60 + 52); // 2 minutos e 52 segundos
+</script>
 
       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
