@@ -19,62 +19,147 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    
 
-      <style>
-         #dance { font-family: "Poppins", serif;}
-         .section-bar-progress { background: #19102C;}
-         .progress { height: 30px; position: relative; }
-         .progress-bar { line-height: 30px; font-weight: bold; color: white; background: linear-gradient(to right, #4F01CA, #DB0FDB);}
-         .progress-text-left { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: bold; color: #fff;}
-         .progress-text-right { position: absolute; right: 16%; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: bold; color: #fff; }
-         .section-one-dance { 
-            background-image: url('../img/imgs 50 receitas/bg-desktop-copiar-1.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 6rem 0;
-            color: #fff;
-         }
-         .section-bene {
-            background-color: #0C041C;
-            width: 100%;
-            padding: 5rem;
-         }
+<style>
+#dance { font-family: "Poppins", serif;}
+.section-bar-progress { background: #19102C;}
+.progress { 
+   height: 30px; 
+   position: relative; 
+}
 
-         .benefit-card {
-            display: flex;
-            border: 1px solid #342B47;
-            border-radius: 10px;
-            padding: 22px;
-            text-align: center;
-            width: 18.33%;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-evenly;
-            background: #19102C;
-            color: #fff;
-            font-size: 18px;
-            height: auto;  
-         }
+/* Para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+   .progress { 
+      width: 100%!important;
+      height: 20px;
+}
+.section-one-dance {
+   padding: 1.5rem 0!important;
+}
+.section-one-dance h2 {
+   max-width: 255px;
+   margin: 0 auto 5px;
+   font-weight: 700;
+   font-size: 20px;
+}
 
-         .benefit-card p {
-            padding: 2rem 0;
-            text-align: left;   
-         }
+.video-container {
+   width: 95%;
+}
+.first-cta {
+   width: 85%!important;
+}
+.img-garant-- {
+    width: 230px;
+}
+.section-bene {
+    padding: 1rem!important;
+}
+.section-bene H2 {
+    font-size: 30px!important;
+    width: 89%!important;
+    margin: 2rem 0!important;
+}
 
-         .testimonials video { width: 100%; height: auto; }
-         .guarantee-icon, .price-card img { max-width: 100px; display: block; margin: 0 auto; }
-         .price-card {
-            text-align: center;
-            padding: 5rem 0;
-            border-radius: 10px;
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            border: 1px solid #5546729c;
-            background: #1e1334;
-         }
+.benefit-card {
+    width: 85.33%!important;
+}
+.section-depoim {
+    padding: 2rem 1rem!important;
+}
+.section-depoim h2 {
+    font-size: 30px!important;
+    width: 80%!important;
+}
+.section-depoim button {
+    font-size: 20px!important;
+}
+.section-publico-alvo {
+    padding: 2rem 0!important;
+}
+.section-garantia p {
+    width: 100%!important;
+}
+.section-garantia h3 {
+    font-size: 35px!important;
+}
+.section-garantia {
+    padding: 3rem 0!important;
+}
+.section-valor {
+    padding: 3rem 0!important;
+}
+.img-oferta {
+    width: 90%!important;
+}
+.section-valor h3 {
+    margin: -30px 0 0!important;
+}
+.price-current {
+    margin: 0 0 3rem!important;
+}
+.price-card button {
+    height: 4rem;
+    width: 85%;
+    font-size: 20px;
+}
+.img-garantia-final {
+    width: 85%;
+}
+}
 
-     </style>
+.progress-bar { line-height: 30px; font-weight: bold; color: white; background: linear-gradient(to right, #4F01CA, #DB0FDB);}
+.progress-text-left { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: bold; color: #fff;}
+.progress-text-right { position: absolute; right: 16%; top: 50%; transform: translateY(-50%); font-size: 14px; font-weight: bold; color: #fff; }
+.section-one-dance { 
+   background-image: url('../img/imgs 50 receitas/bg-desktop-copiar-1.webp');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding: 6rem 0;
+   color: #fff;
+}
+.section-bene {
+   background-color: #0C041C;
+   width: 100%;
+   padding: 5rem;
+}
+
+.benefit-card {
+   display: flex;
+   border: 1px solid #342B47;
+   border-radius: 10px;
+   padding: 22px;
+   text-align: center;
+   width: 18.33%;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   background: #19102C;
+   color: #fff;
+   font-size: 18px;
+   height: auto;  
+}
+
+.benefit-card p {
+   padding: 2rem 0;
+   text-align: left;   
+}
+
+.testimonials video { width: 100%; height: auto; }
+.guarantee-icon, .price-card img { max-width: 100px; display: block; margin: 0 auto; }
+.price-card {
+   text-align: center;
+   padding: 5rem 0;
+   border-radius: 10px;
+   width: 100%;
+   max-width: 500px;
+   margin: 0 auto;
+   border: 1px solid #5546729c;
+   background: #1e1334;
+}
+
+</style>
 
       <script>
          !function(f,b,e,v,n,t,s)
@@ -130,7 +215,7 @@
             <div class="first-cta d-flex flex-column w-25">
                
                <button type="button" class="btn btn-success mt-3 shakeme" onclick="window.location.href='#sectionPrice'">Quero dançar agora</button>
-               <img src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Selos de Garantia" class="mt-3" width="300">
+               <img src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Selos de Garantia" class="mt-3 img-garant--" width="300">
             </div>
 
       </div>
@@ -232,7 +317,7 @@
                <p class="price-ant">DE <span>R$ 2.542,90</span></p>
                <p style="margin: 0 0 -5px;">por apenas</p>
                <h3><span style="font-size: 30px;">12x de</span> R$9,94</h3>
-               <p style="font-size: 20px;">ou R$99,00 à vista</p>
+               <p class="price-current" style="font-size: 20px;">ou R$99,00 à vista</p>
                <button type="button" class="btn btn-primary" onclick="window.location.href='https://pay.kiwify.com.br/DzKlFnU?afid=19nBM2Bt'">Comprar agora</button>
 
                <img width="300" height="auto" src="https://arturcandido.com.br/wp-content/uploads/2024/12/compra-segura.svg" alt="Garantia" class="mt-3 img-garantia-final">

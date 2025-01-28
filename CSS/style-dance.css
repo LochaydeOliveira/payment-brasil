@@ -186,7 +186,7 @@ video {
 
   @keyframes shakeMe{18%,2%{transform:translate3d(-5px,0,0)}16%,4%{transform:translate3d(5px,0,0)}10%,14%,6%{transform:translate3d(-5px,0,0)}12%,8%{transform:translate3d(5px,0,0)}18.1%{transform:translateZ(0)}}
   
-  .benefit-card::after {
+  /* .benefit-card::after {
     content: '';
     position: absolute;
     top: 0;
@@ -201,7 +201,7 @@ video {
         0px 12.522px 10.017px 0px rgba(219, 15, 219, 0.16),
         0px 6.65px 5.32px 0px rgba(219, 15, 219, 0.13),
         0px 2.767px 2.214px 0px rgba(219, 15, 219, 0.09);
-}
+} */
 
 .section-depoim {
   display: flex;
