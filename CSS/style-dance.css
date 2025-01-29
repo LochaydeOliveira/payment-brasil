@@ -377,6 +377,11 @@ video {
   animation: pulse 1.2s infinite ease-in-out;
 }
 
+.price-card button:hover {
+  animation: none;
+  transform: scale(0.98);
+}
+
 .price-card h4 {
   margin: 4rem 0 10px;
   font-size: 20px;
