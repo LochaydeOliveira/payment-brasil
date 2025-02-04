@@ -417,3 +417,71 @@ video {
   width: 36px;
   height: 36px;
 }
+
+#faqAccordion {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-faq {
+  background-color: #0C041C;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.accordion-button {
+  background-color: #1e1334;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1A0E2D;
+  color: #fff;
+  border-radius: 8px!important;
+}
+
+.accordion-body {
+  background-color: #0c041c;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: none!important;
+  background-color: transparent!important;
+
+}
+
+.accordion-item .accordion-button {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  background-image: url(/svg/down.svg)!important;
+}
+
+.accordion-button:focus {
+  color: #DB0FDB!important;
+}
+
+.img-faq {
+  position: relative;
+  width: 20%;
+  bottom: 9rem;
+  left: 40%;
+  padding: 0;
+  z-index: 0;
+  margin: 0 0 -8rem;
+}
