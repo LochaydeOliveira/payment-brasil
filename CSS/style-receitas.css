@@ -1,0 +1,568 @@
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  body {
+    font-family: "Poppins", serif!important;
+  }
+
+  h1 {
+    font-weight: 400!important;
+    font-size: 2.6rem!important;
+    max-width: 700px;
+    margin: 0 auto;
+    color: hsl(0, 0%, 0%)!important;
+    line-height: 2.7rem!important;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeInDown 0.9s ease-out forwards;
+  }
+
+  .main-title {
+    width: 100%;
+    padding: 3rem 5rem 6rem 5rem;
+    background: #FFBF00;
+    text-align: center;
+    position: relative;
+
+  }
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.underline {
+    position: absolute;
+    left: 50%;
+    bottom: 5rem;
+    transform: translateX(-50%);
+    width: 400px;
+    height: auto;
+    stroke: #ffffff;
+    stroke-width: 10;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: drawSVG 1.5s ease-out forwards;
+}
+
+@keyframes drawSVG {
+    from {
+        stroke-dashoffset: 500;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.section-one-container {
+    background-image: url('../img/imgs 50 receitas/background-section-one.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.video-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 2rem;
+    padding: 15px 20px;
+    border-radius: 50%;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.notice-post {
+    width: 100%;
+    background: #fff;
+    padding: 2rem 5rem;
+    margin: 2rem;
+}
+
+.tex-post {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.notice-post h2 {
+    color: #000;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0rem 0 1rem 0;
+}
+
+.notice-post p {
+    font-size: 22px;
+    color: #141414;
+    font-weight: 300;
+}
+
+.note-reference {    
+    margin: 3rem auto 0;
+    font-size: 18px;
+    color: #202020;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.note-reference strong { 
+    font-weight: 800;
+}
+
+.section-button-ancora {
+    width: 100%;
+    background: #131313;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.section-button-ancora button {
+    width: 30%;
+    background: #09e41b;
+    padding: 25px;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    box-shadow: 0px 8px 14px 3px #09e41b59;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.section-list-beneficios {
+    background-image: url('../img/imgs\ 50\ receitas/Bloco-03-1-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+.title-bene {
+    color: #fff;
+    font-size: 2.3rem;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.title-bene strong {
+    font-weight: 800;
+}
+
+.list-bener-one {
+    margin: 3rem 0;
+    color: #ffbf00;
+}
+
+.ul-list-bene {
+    list-style: none!important;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.list-bene-item svg {
+    fill: #FFBF00;
+}
+
+/* Adiciona a animação quando o mouse passa por cima */
+.section-button-ancora button:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+.text-rodape-section {
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Para telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-weight: 400!important;
+        font-size: 1.5rem!important;
+        max-width: 700px;
+        margin: 0 auto;
+        color: #000!important;
+        line-height: 1.6rem!important;
+        opacity: 0;
+        transform: translateY(-30px);
+        animation: fadeInDown 0.9s ease-out forwards;
+      }
+    .main-title {
+    background: #FFBF00;
+    }
+    .underline {
+        width: 270px;
+        bottom: 1.4rem;
+    }
+
+    .section-one-container {
+        height: auto;
+        padding: 0;
+    }
+
+    .notice-post {
+        width: 100%;
+        background: #fff;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+    }
+
+    .notice-post h2 {
+        font-size: 23px;
+    }
+
+    .notice-post p {
+        font-size: 20px;
+        color: #4f4f4f;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .note-reference {
+        margin: 2rem 0;
+        font-size: 17px;
+        color: #1e1e1e;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .section-list-beneficios {
+        height: 180vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
+    }
+
+    .text-rodape-section {
+        font-size: 25px;
+        line-height: 27px;
+        padding: 2rem 1rem;
+        flex-direction: column;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    video {
+        border-radius: 0;
+    }
+
+    .main-title {
+        padding: 2rem 1rem;
+        background: #FFBF00;
+    }
+
+    .title-bene {
+        padding: 2rem 0;
+    }
+
+  }
+  
+  /* Para celulares (largura entre 481px e 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-weight: 400!important;
+        font-size: 2.6rem!important;
+        max-width: 600px;
+        margin: 0 auto;
+        color: #000!important;
+        line-height: 2.7rem!important;
+        opacity: 0;
+        transform: translateY(-30px); /* Começa 30px acima */
+        animation: fadeInDown 0.9s ease-out forwards;
+      }
+      .main-title {
+        background: #FFBF00;
+    
+      }
+    .underline {
+        width: 400px;
+        bottom: 5rem;
+    }
+    .section-one-container {
+        height: auto;
+        padding: 2em 0;
+    }
+
+    .notice-post {
+        width: 100%;
+        background: #fff;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+    }
+
+    .notice-post h2 {
+        font-size: 23px;
+    }
+
+    .notice-post p {
+        font-size: 20px;
+        color: #4f4f4f;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .note-reference {
+        margin: 2rem 0;
+        font-size: 17px;
+        color: #1e1e1e;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .section-list-beneficios {
+        height: 150vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 70%;
+        padding: 20px;
+        font-weight: 800;
+    }
+
+    .text-rodape-section {
+        font-size: 20px;
+        width: 75%;
+        flex-direction: column;
+    }
+  }
+  
+  /* Para tablets (largura entre 769px e 1024px) */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        color: #000!important;
+      }
+      .main-title {
+        background: #FFBF00;
+      }
+    .underline {
+        width: 400px;
+        bottom: 5rem;
+    }
+    .section-one-container {
+        height: auto;
+        padding: 2em 0;
+    }
+
+    .notice-post {
+        width: 100%;
+        background: #fff;
+        padding: 2rem 2rem;
+        margin: 0 auto;
+    }
+
+    .notice-post h2 {
+        font-size: 23px;
+    }
+
+    .notice-post p {
+        font-size: 20px;
+        color: #4f4f4f;
+        font-weight: 300;
+        line-height: 25px;
+    }
+
+    .note-reference {
+        margin: 2rem 0;
+        font-size: 17px;
+        color: #1e1e1e;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .section-list-beneficios {
+        height: 150vh;
+        padding: 1rem;
+    }
+
+    .section-button-ancora button {
+        width: 70%;
+        padding: 20px;
+        font-weight: 800;
+    }
+
+    .text-rodape-section {
+        font-size: 20px;
+    }
+  }
