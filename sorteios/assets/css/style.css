@@ -1,0 +1,377 @@
+/* ========================================================= */
+/* ARQUIVO: style.css (Estilos Profissionais e Responsivos) */
+/* FONTE: Poppins */
+/* ========================================================= */
+
+/* Reset Básico e Importação da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --poppins: 'Poppins', sans-serif;
+    --primary-color: #007bff; /* Azul Profissional */
+    --secondary-color: #28a745; /* Verde Sucesso */
+    --reserved-color: #dc3545; /* Vermelho Erro/Reservado */
+    --bg-color: #f8f9fa; /* Fundo Leve */
+    --card-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+body { 
+    font-family: var(--poppins); 
+    background-color: var(--bg-color); 
+    color: #343a40; 
+    margin: 0; 
+    padding: 0; 
+    line-height: 1.6;
+}
+.container { 
+    max-width: 960px; 
+    margin: auto; 
+    padding: 20px; 
+}
+h1, h2, h3 {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* -------------------------------------- */
+/* 1. SEÇÃO BANNER / HEADER (Com imagem de fundo responsiva) */
+/* -------------------------------------- */
+.banner { 
+    height: 250px;
+    background-image: url('../images/banner-desktop.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white; 
+    padding: 30px 20px; 
+    border-radius: var(--border-radius); 
+    margin-bottom: 25px; 
+    box-shadow: var(--card-shadow); 
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+}
+.banner h1 { 
+    margin-top: 0; 
+    font-size: 2.5em; 
+    color: white; 
+    font-weight: 700;
+}
+.banner .price { 
+    font-size: 1.2em; 
+    font-weight: 400; 
+}
+
+.banner a {
+    width: 100%;
+    display: flex;
+    z-index: 9;
+    position: relative;
+    height: 270px;
+}
+/* -------------------------------------- */
+/* 2. GRID DE NÚMEROS */
+/* -------------------------------------- */
+.grid-container { 
+    background: white; 
+    padding: 15px; 
+    border-radius: var(--border-radius); 
+    box-shadow: var(--card-shadow); 
+    margin-bottom: 20px; 
+}
+.numero-grid {
+    display: grid;
+    /* Garante colunas que se ajustam para mobile */
+    grid-template-columns: repeat(auto-fill, minmax(55px, 1fr)); 
+    gap: 4px;
+    max-height: 400px;
+    overflow-y: scroll;
+    padding: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+}
+.numero-item {
+    padding: 8px 4px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+.status-disponivel:hover { background-color: #e9ecef; border-color: #adb5bd; }
+.status-selecionado { 
+    background-color: var(--secondary-color) !important; 
+    color: white; 
+    border-color: #218838; 
+    transform: scale(1.05);
+}
+.status-reservado, .status-pago { 
+    background-color: var(--reserved-color); 
+    color: white; 
+    cursor: not-allowed; 
+    opacity: 0.8; 
+}
+
+/* -------------------------------------- */
+/* 3. FORMULÁRIO E BOTÕES */
+/* -------------------------------------- */
+.form-section { 
+    background: white; 
+    padding: 20px; 
+    border-radius: var(--border-radius); 
+    box-shadow: var(--card-shadow); 
+    margin-bottom: 20px; 
+}
+.total-box { 
+    font-size: 2em; 
+    font-weight: 700; 
+    text-align: center; 
+    padding: 10px 0; 
+    color: var(--secondary-color); /* Corrigido para a cor de destaque */
+    border-bottom: 2px solid #e9ecef;
+    margin-bottom: 20px;
+}
+.total-box small { 
+    display: block; 
+    font-size: 0.5em; 
+    color: #6c757d; 
+    font-weight: 400;
+}
+
+input { 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ced4da; 
+    border-radius: 4px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    font-family: var(--poppins);
+}
+
+button { 
+    background-color: var(--primary-color); /* Corrigido para a cor primária */
+    padding: 18px; 
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    margin: 0 auto;
+    display: flex;
+    color: #fff!important;
+    font-weight: 600;
+    border: none!important;
+    cursor: pointer;
+}
+button:hover:not(:disabled) { background-color: #1ab15b; } /* Corrigido para ser uma cor primária no hover */
+button:disabled { background-color: #adb5bd; cursor: not-allowed; opacity: 0.9; }
+
+/* Mensagens de Erro (Mantidas) */
+.error-message { 
+    background-color: #f8d7da; 
+    color: #721c24; 
+    padding: 15px; 
+    border-radius: 4px; 
+    margin-bottom: 15px; 
+    border: 1px solid #f5c6cb; 
+    font-size: 0.9em;
+}
+
+/* -------------------------------------- */
+/* 4. PÁGINA DE CONFIRMAÇÃO (confirmar.php) */
+/* -------------------------------------- */
+.popup-card { 
+    max-width: 500px; 
+    margin: 30px auto; 
+    padding: 30px; 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: var(--card-shadow); 
+    border-top: 5px solid var(--primary-color); 
+    text-align: center;
+}
+.popup-card h1 { color: var(--primary-color); font-size: 2em; }
+.countdown { 
+    font-size: 2.8em; 
+    font-weight: 700; 
+    color: var(--reserved-color); 
+    margin: 20px 0; 
+    padding: 10px;
+    background: #fff3cd;
+    border-radius: 4px;
+}
+.details-box { 
+    background: #f8f9fa; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin: 15px 0; 
+    text-align: left; 
+    border: 1px solid #e9ecef;
+}
+.value-label { font-size: 1.3em; font-weight: 700; color: var(--secondary-color); }
+.chave-pix-container { 
+    background: #e9f7ef; 
+    border: 1px dashed var(--secondary-color); 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin: 15px 0; 
+    cursor: pointer; 
+}
+.chave-pix-container code { font-size: 1em; display: block; overflow-wrap: break-word; font-weight: 600; }
+.btn-copy { 
+    background: var(--secondary-color); 
+    padding: 8px 15px; 
+    font-size: 0.9em;
+    width: auto;
+    display: inline-block;
+}
+.numeros-lista { display: flex; flex-wrap: wrap; justify-content: flex-start; max-height: 150px; overflow-y: auto; margin-top: 10px; }
+.numero-conf { background: var(--secondary-color); color: white; padding: 5px 8px; margin: 3px; border-radius: 3px; font-weight: 600; }
+
+/* -------------------------------------- */
+/* 5. RESPONSIVIDADE (Ajustes Mobile) */
+/* -------------------------------------- */
+@media (max-width: 768px) {
+    .container { padding: 10px; }
+    .banner h1 { font-size: 2em; }
+    /* Ajusta o grid para 4 colunas em telas menores para dar mais espaço vertical */
+    .numero-grid {
+        grid-template-columns: repeat(auto-fill, minmax(65px, 1fr)); 
+    }
+    .numero-item { font-size: 0.9em; padding: 10px 2px; }
+    .total-box { font-size: 1.5em; }
+    button { padding: 15px; font-size: 1.1em; }
+
+    /* Mobile Banner */
+    .banner {
+        height: 300px; /* Altura menor para mobile */
+        background-image: url('../images/banner-mobile.png'); 
+    }
+
+    .banner a {
+        height: 330px;
+    }
+}
+
+
+/* -------------------------------------- */
+/* 4. PÁGINA DE CONFIRMAÇÃO (confirmar.php) */
+/* -------------------------------------- */
+.popup-card { 
+    max-width: 500px; 
+    margin: 50px auto; /* Usando 50px do estilo anterior para centralização vertical */
+    padding: 30px; 
+    background: white; 
+    border-radius: 12px; 
+    box-shadow: var(--card-shadow); 
+    border-top: 5px solid var(--pix-color); /* Usando a cor PIX */
+    text-align: center;
+}
+.popup-card h1 { 
+    color: var(--pix-color); /* Cor H1 */
+    font-size: 2em; 
+    gap: 3px; 
+    justify-content: center;
+    align-items: center;
+}
+.countdown { 
+    font-size: 2.5em; /* Ajustado para 2.5em conforme seu código anterior */
+    font-weight: bold; 
+    color: var(--reserved-color); 
+    margin: 20px 0; 
+    padding: 10px;
+    background: #fff3cd;
+    border-radius: 4px;
+}
+.details-box { 
+    background: #f8f9fa; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin: 15px 0; 
+    text-align: left; 
+    border: 1px solid #e9ecef;
+}
+.details-box p { margin: 5px 0; }
+.value-label { font-size: 1.2em; font-weight: bold; color: var(--secondary-color); }
+
+/* PIX Container */
+.chave-pix-container { 
+    background: #e9f7ef; 
+    border: 1px dashed var(--secondary-color); 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin: 15px 0; 
+    cursor: pointer; 
+    display: flex; /* Para centralizar o código e botão */
+    flex-direction: column;
+}
+.chave-pix-container code { font-size: 1.1em; font-weight: 600; margin-bottom: 10px; }
+.btn-copy { 
+    background: var(--secondary-color);
+    padding: 10px 20px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 5px!important;
+    gap: 5px;
+    height: 32px;
+}
+
+/* Números Reservados (BADGES) */
+.numeros-lista { 
+    margin-top: 10px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; /* Alinha os badges à esquerda */
+    max-height: 150px; 
+    overflow-y: auto; 
+}
+.numero-conf { 
+    background: var(--secondary-color); 
+    color: white; 
+    padding: 5px 8px; 
+    margin: 3px; 
+    border-radius: 3px; 
+    font-weight: bold; 
+    font-size: 0.9em;
+}
+
+/* ========================================================= */
+/* ADIÇÃO em style.css (Estilo para o Contador de Vendas) */
+/* ========================================================= */
+
+.sales-info {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #ffffff; /* Fundo branco ou claro */
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.sales-info .price {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 5px;
+}
+
+.sales-info .counter {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: var(--secondary-color); /* Geralmente verde para sucesso/comprado */
+    margin: 5px 0;
+}
+
+.sales-info .counter strong {
+    font-weight: 700;
+}
+
+.sales-info .reserved {
+    font-size: 1em;
+    color: orange;
+}
